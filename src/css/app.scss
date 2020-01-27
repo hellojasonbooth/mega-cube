@@ -1,3 +1,95 @@
 @import "reset";
 
 
+body {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: #1d1d1d;
+    color: #ffffffff;
+    overflow: hidden;
+}
+
+section.camera {
+    position: fixed;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+    height: 100%;
+    width: 100%;
+
+    div.cube {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+    
+        div.face {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: cover;
+        }
+        
+        div.front {
+            width: 410px;
+            height: 120px;
+            background-image: url("img/front.png");
+            transform: translateX(-50%) translateY(-50%) translateZ(60px);
+        }
+        
+        div.top {
+            width: 410px;
+            height: 120px;
+            background-image: url("img/front.png");
+            transform: translateX(-50%) translateY(-120px) translateZ(0px) rotateX(90deg);
+        }
+        
+        div.bottom {
+            width: 410px;
+            height: 120px;
+            background-image: url("img/front.png");
+            transform: translateX(-50%) translateY(0px) translateZ(0px) rotateX(-90deg);
+        }
+        
+        div.back {
+            width: 410px;
+            height: 120px;
+            background-image: url("img/front.png");
+            transform: translateX(-50%) translateY(-60px) translateZ(-60px) rotateX(180deg);
+        }
+        
+        div.side-left {
+            width: 120px;
+            height: 120px;
+            background-image: url("img/side.png");
+            transform: translateX(-205px) translateY(-50%) rotateY(-90deg) translateZ(60px);
+        }
+        
+        div.side-right {
+            width: 120px;
+            height: 120px;
+            background-image: url("img/side.png");
+            transform: translateX(205px) translateY(-50%) rotateY(-90deg) translateZ(60px);
+        }
+    }
+}
+
+
+
+
+
+div.credit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding:30px 40px;
+
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid #ffffffff;
+        color: #fff;
+    }
+}
