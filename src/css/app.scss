@@ -1,6 +1,17 @@
 @import "reset";
 
 
+@keyframes spin {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+
+
 body {
     font-family: Arial;
     font-size: 16px;
@@ -24,7 +35,7 @@ section.camera {
         top: 50%;
         left: 50%;
         transform-style: preserve-3d;
-        backface-visibility: hidden;
+
     
         div.face {
             position: absolute;

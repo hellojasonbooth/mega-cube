@@ -1,6 +1,15 @@
+const cubeTag = document.querySelector('div.cube')
+
+cubeTag.style.animation = 'spin 1.4s infinite linear'
+
 document.addEventListener('mousemove', function (event) {
+  cubeTag.style.animation = ''
+})
+
+document.addEventListener('mousemove', function (event) {
+
   
-  const cubeTag = document.querySelector('div.cube')
+  //const cubeTag = document.querySelector('div.cube')
 	
   const x = event.pageX
   const y = event.pageY
