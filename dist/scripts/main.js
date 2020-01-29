@@ -8,9 +8,9 @@
       cubeTag.style.animation = ''
     })
    
-    document.addEventListener('touchmove', function (event) {
-      cubeTag.style.animation = ''
-    })
+    // document.addEventListener('touchmove', function (event) {
+    //   cubeTag.style.animation = ''
+    // })
 
     function animate() {
 
