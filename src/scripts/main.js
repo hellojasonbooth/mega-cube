@@ -1,15 +1,18 @@
     
     
-    const cubeTag = document.querySelector('div.cube')
+
 
     // cubeTag.style.animation = 'spin 2s infinite linear'
 
-    document.addEventListener('mousemove', function (event) {
-      cubeTag.style.animation = ''
-    })
+    // document.addEventListener('mousemove', function (event) {
+    //   cubeTag.style.animation = ''
+    // })
    
 
     function animate() {
+
+      const cubeTag = document.querySelector('div.cube')
+
       const x = event.pageX
       const y = event.pageY
 
@@ -30,16 +33,7 @@
 
 
     document.addEventListener("touchmove", function (event) {
-      const x = event.pageX
-      const y = event.pageY
-
-      const midX = x - window.innerWidth / 2
-      const midY = y - window.innerHeight / 2
-
-      cubeTag.style.left = x + 'px'
-      cubeTag.style.top = y + 'px'
-
-      cubeTag.style.transform = "rotateX(" + midY + "deg) rotateY(" + midX + "deg)"
+      animate()
     })
 
 
