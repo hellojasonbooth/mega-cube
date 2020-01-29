@@ -37,18 +37,18 @@
     // detect whether mouse is inactive
     // setup a timer to keep track 
     function resetTimer() { 
-      window.clearTimeout(mouseTimeout)
+      window.clearTimeout(timeout)
       startTimer()
     }
 
     const timeoutCounter = 220
-    let mouseTimeout
+    let timeout
   
     function startTimer() { 
-        mouseTimeout = window.setTimeout(mouseIsInactive, timeoutCounter)
+        timeout = window.setTimeout(isInactive, timeoutCounter)
     }
       
-    function mouseIsInactive() {
+    function isInactive() {
         console.log('im inactive')
         cubeTag.style.animation = 'spin 2s cubic-bezier(0.19, 1, 0.22, 1) infinite'
     }
