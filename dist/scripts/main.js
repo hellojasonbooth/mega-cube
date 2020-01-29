@@ -2,7 +2,7 @@
     
     const cubeTag = document.querySelector('div.cube')
 
-    cubeTag.style.animation = 'spin 2s infinite linear'
+    //cubeTag.style.animation = 'spin 2s infinite linear'
 
     document.addEventListener('mousemove', function (event) {
       cubeTag.style.animation = ''
@@ -58,7 +58,7 @@
       
     function mouseIsInactive() {
         console.log('im inactive')
-        cubeTag.style.animation = 'spin 2s infinite linear'
+        cubeTag.style.animation = 'spin 2s cubic-bezier(0.19, 1, 0.22, 1) infinite'
     }
     
     function setupTimers () {
