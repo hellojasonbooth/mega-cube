@@ -2,11 +2,12 @@
     
     const cubeTag = document.querySelector('div.cube')
 
-    //cubeTag.style.animation = 'spin 2s infinite linear'
+    // cubeTag.style.animation = 'spin 2s infinite linear'
 
     document.addEventListener('mousemove', function (event) {
       cubeTag.style.animation = ''
     })
+   
 
     function animate() {
       const x = event.pageX
@@ -36,27 +37,27 @@
 
     // detect whether mouse is inactive
     // setup a timer to keep track 
-    function resetTimer() { 
-      window.clearTimeout(timeout)
-      startTimer()
-    }
+    // function resetTimer() { 
+    //   window.clearTimeout(timeout)
+    //   startTimer()
+    // }
 
-    const timeoutCounter = 220
-    let timeout
+    // const timeoutCounter = 220
+    // let timeout
   
-    function startTimer() { 
-        timeout = window.setTimeout(isInactive, timeoutCounter)
-    }
+    // function startTimer() { 
+    //     timeout = window.setTimeout(isInactive, timeoutCounter)
+    // }
       
-    function isInactive() {
-        console.log('im inactive')
-        cubeTag.style.animation = 'spin 2s cubic-bezier(0.19, 1, 0.22, 1) infinite'
-    }
+    // function isInactive() {
+    //     console.log('im inactive')
+    //     cubeTag.style.animation = 'spin 2s cubic-bezier(0.19, 1, 0.22, 1) infinite'
+    // }
     
-    function setupTimers () {
-        document.addEventListener("mousemove", resetTimer, false)
-        document.addEventListener("touchmove", resetTimer, false)
-        startTimer()
-    }
-        setupTimers()
+    // function setupTimers () {
+    //     document.addEventListener("mousemove", resetTimer, false)
+    //     document.addEventListener("touchmove", resetTimer, false)
+    //     startTimer()
+    // }
+    //     setupTimers()
     
