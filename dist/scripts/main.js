@@ -14,7 +14,7 @@
 
     function animate() {
 
-      const cubeTag = document.querySelector('div.cube')
+      //const cubeTag = document.querySelector('div.cube')
 
       const x = event.pageX
       const y = event.pageY
